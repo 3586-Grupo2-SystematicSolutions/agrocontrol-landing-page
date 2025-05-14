@@ -14,6 +14,14 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: var(--font-primary), sans-serif;
+    background-color: #F5F5F5;
+    color: var(--fontcolor);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
 *,
 *::before,
 *::after {
@@ -836,6 +844,7 @@ nav ul li a:hover {
     border-radius: 8px;
     padding: 20px;
     transition: transform 0.3s ease;
+    background-color: #fff;
 }
 
 .testimonials__card:hover {
@@ -878,7 +887,7 @@ nav ul li a:hover {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -1070,6 +1079,7 @@ nav ul li a:hover {
 
 .about-us__collaborators {
     margin-top: 1rem;
+    text-size: 1.5rem;
 }
 
 .members{
@@ -1078,10 +1088,11 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem,7fr));
     grid-gap: 1rem;
+    justify-content: center;
 }
 
 .member{
-    padding: 2rem 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1089,12 +1100,15 @@ nav ul li a:hover {
 }
 
 .member img{
-    width: 50%;
+    width: 150px;
+    height: 200px;
     border-radius: 50%;
 }
 
 .member h3{
     color: black;
+    margin-top: 1rem;
+    text-wrap: nowrap;
     align-items: center;
     text-align: center;
 }
